@@ -1,0 +1,227 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+html, body
+{
+	height:100%;/*实现布局高度自适应要保证父元素自适应*/
+
+}
+
+body
+{
+	font-size:12px;
+	font: 12px/1.62 Arial,Helvetica,sans-serif;
+	min-width:600px;/*浏览器宽度小于600出现滚动条*/
+	line-height:1.4em;
+}
+
+ul
+{
+	list-style-type:none;
+}
+
+/*top顶*/
+.top
+{
+	width:100%;
+	height:28px;
+	position:fixed;
+	top:0;
+	left:0;
+	background:pink;
+}
+
+html.toolbar
+{
+	padding-top:28px;/*留出顶部top的距离*/
+}
+
+
+/*导航*/
+.menu
+{
+	width:145px;
+	height:100%;
+	float:left;
+	background:#DFDFDF;
+}
+
+.menu ul a
+{
+	display:block;
+	text-decoration:none;
+	color:#21759B;
+}
+
+.menu-parent
+{
+	border-bottom-color: #DFDFDF;/*边框线的颜色和加粗*/
+    border-top-color: #F9F9F9;
+	border-style: solid none;
+    border-width: 1px 0;
+}
+
+.menu-parent-image
+{
+	float:left;
+	width:28px;
+	height:28px;
+	background:url(../images/menu.png) no-repeat 0 0;
+}
+
+.menu-name
+{
+	font-size:13px;
+	padding:8px;	
+}
+
+.menu-son
+{
+	padding:4px 0;
+	background:#FFF;
+}
+
+.menu-son a
+{
+	border-top:none;
+	padding:3px 12px;
+	background:#FFF;
+}
+	
+
+.menu ul a:hover
+{
+	color:#21759B;
+	background:#eeeeee;
+}
+
+/*内容*/
+.content
+{
+	background:purple;
+	height:100%;
+	margin-left:165px;
+}
+
+.body-wrap
+{
+	width:100%;
+	height:100%;
+	float:left;/*很重要，让body浮动在content里面*/
+
+}
+
+.body
+{
+	height:100%;
+	margin:4px 14px 0 0;
+}
+
+/*LOGIN*/
+
+.login
+{
+	margin:114px auto 0 auto;
+	width:320px;
+	height:320px;
+	border:1px solid #E6DB55;
+
+}
+
+.login h1 a
+{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:30px;
+	color:#CCC;
+}
+
+.login .attention
+{
+    background-color: #FFFFE0;
+    border-color: #E6DB55;
+	margin: 5px 35px 0 30px;
+	padding: 10px 5px;
+	border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+	text-align:center;
+	
+}
+
+.login .item
+{
+	margin-bottom:10px;
+}
+
+.login form
+{
+	padding:10px 0 0 25px;
+}
+
+.login fieldset
+{
+	border:none;
+}
+
+.login .item label
+{
+	float:left;
+	letter-spacing:10px;
+	padding:5px;
+}
+
+.login .item input
+{
+	width:200px;
+	padding:5px 2px;
+	border:1px solid #CCC;
+}
+
+.login .item2 
+{
+	float:left;
+	margin:0 20px 10px 0;
+}
+
+.login .item2 label
+{
+	float:left;
+	margin-top:4px;
+	margin-left:4.5em;
+	
+}
+
+.login .item2 input
+{
+	margin-right:3px;
+	vertical-align: middle;
+}
+
+.login .item2 .pn-submit
+{
+	background:url(../images/ui_nav_logo_5.png) no-repeat -23px -48px;
+	width:80px;
+	height:28px;
+	border:none;
+	color:#FFF;
+	font-size:13px;
+	cursor:pointer;
+}
+
+.login .return_dash
+{
+	margin:25px;
+}
+
+.login .return_dash a
+{
+	text-decoration:none;
+	color:#CCC;
+}
+
+
